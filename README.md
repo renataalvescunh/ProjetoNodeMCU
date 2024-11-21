@@ -14,11 +14,35 @@ O código-fonte está disponível na pasta `src`. Consulte `docs.md` para docume
 
 ## 🔌 Hardware Utilizado
 
-- **Plataforma de Desenvolvimento:** NodeMCU ESP8266
-- **Sensores:** Fotocélula para detecção de luz ambiente
-- **Atuadores:** Relés para controle das luzes
-- **Impressão 3D:** Suportes para sensores e caixas de proteção
-- 
+Este projeto utiliza os seguintes componentes: 
+
+| Quantidade | Componente | 
+|------------|------------|
+|     1      | NodeMCU ESP8266 | 
+| 1 | Sensor de Luz (LDR) | 
+| 1 | Fonte de energia | 
+| x | Resistores | 
+| x | LEDs | 
+| x | Transistores |
+| 1 | Protoboard | 
+| x | Jumpers |
+
+
+## Descrição dos Componentes - 
+
+- **NodeMCU ESP8266**: Placa de desenvolvimento baseada no chip ESP8266, ideal para projetos de IoT devido ao seu WiFi embutido. 
+- **Sensor de Luz (LDR)**: Utilizado para detectar a luminosidade ambiente e acionar as luzes dos postes. 
+- **Fonte de energia**: Necessária para alimentar o NodeMCU e os outros componentes do circuito. 
+- **Resistores**: Utilizados para limitar a corrente em diversos pontos do circuito. 
+- **LEDs**: Utilizados como indicadores visuais no projeto. 
+- **Transistores**: Utilizados para amplificar ou comutar sinais eletrônicos. 
+- **Protoboard**: Placa de ensaio utilizada para montar circuitos eletrônicos sem a necessidade de solda. 
+
+
+
+- **Jumpers**: Fios utilizados para realizar as conexões no protoboard.
+
+
 ## 📁 Documentação das Interfaces e Protocolos
 
 - **Interface Web:** Interface para controle manual e monitoramento
@@ -31,14 +55,9 @@ O código-fonte está disponível na pasta `src`. Consulte `docs.md` para docume
 
 ## 📌 Como Reproduzir 
 
-1. Clone este repositório: Abra o terminal ou prompt de comando no seu computador e digite o seguinte comando para clonar o repositório:
-   `git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
-`
-3. Configure o WiFi e o MQTT no arquivo `src/main.ino`.
-4. Compile e carregue o código no NodeMCU.
-5. Conecte os sensores e atuadores conforme descrito em `hardware.md`.
-6. Acesse a interface web para controle manual e monitoramento.
+1. Clone este repositório com o seguinte comando:
 
+    `git clone https://github.com/seu-usuario/projeto.git` <br>
 
+2. Continuar [...]
 
