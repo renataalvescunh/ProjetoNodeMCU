@@ -25,6 +25,20 @@ O código-fonte está disponível na pasta `src`. Consulte `docs.md` para docume
 - **Protocolos de Comunicação:** 
   - **TCP/IP:** Utilizado para conexão com a rede local e controle remoto
   - **MQTT:** Utilizado para comunicação entre o NodeMCU e o servidor central
+ 
+## 💡 Protocolo MQTT
 
-## 📌 Protocolo MQTT
+
+## 📌 Como Reproduzir 
+
+1. Clone este repositório: Abra o terminal ou prompt de comando no seu computador e digite o seguinte comando para clonar o repositório:
+   `git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+`
+3. Configure o WiFi e o MQTT no arquivo `src/main.ino`.
+4. Compile e carregue o código no NodeMCU.
+5. Conecte os sensores e atuadores conforme descrito em `hardware.md`.
+6. Acesse a interface web para controle manual e monitoramento.
+
+
 
