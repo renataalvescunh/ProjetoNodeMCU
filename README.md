@@ -1,62 +1,52 @@
   <h1 align="center" id="project_name">
   <img src="https://github.com/user-attachments/assets/b2d46483-62ba-4f6b-a25e-000a550c525e" alt="Logo" width="204px">
   <br>
-  ⚙ Sistema de Monitoramento de Iluminação Pública  
+  ⚙💡 Sistema de Monitoramento de Iluminação Pública  
   <br> </h1>
-Este projeto visa desenvolver um sistema simples de monitoramento de iluminação pública utilizando o microcontorlador NodeMCU e o protocolo MQTT. O sistema detecta o estado de postes de iluminação através de um sensor de luz LDR, que envia os dados para um microcontrolador. Com o uso de um protocolo MQTT, as informações sobre o status das lâmpadas são transmitidas para uma plataforma de monitoramento, que alerta em casos de falha ou uso indevido. 
-
+Este projeto propõe um sistema inteligente de monitoramento de iluminação pública utilizando o microcontrolador NodeMCU ESP8266 e o protocolo MQTT. O sistema realiza a detecção do status de lâmpadas em postes por meio de um sensor LDR, enviando as informações para uma plataforma de monitoramento em tempo real. 
 
 ## 🖱 Funcionalidades
-- Ligamento automático das luzes ao anoitecer e desligamento ao amanhecer.
-- Monitoramento em tempo real do status das luzes.
+
+- **Ligamento automático das luzes:** As lâmpadas acendem automaticamente ao anoitecer, baseado na leitura do sensor LDR.
+- **Desligamento automático ao amanhecer:** As lâmpadas se apagam automaticamente quando a luminosidade do ambiente ultrapassa o limiar de luminosidade.
+- **Monitoramento em tempo real:** O status das lâmpadas é atualizado constantemente em uma plataforma de controle via protocolo MQTT.
 
 ## 🖥 Software desenvolvido 
 O código-fonte está disponível na pasta `src`. Consulte `docs.md` para documentação detalhada.
 
 ## 🔌 Hardware Utilizado
 
-Este projeto utiliza os seguintes componentes: 
+Este projeto utiliza os seguintes componentes:
 
-| Quantidade | Componente | 
-|------------|------------|
-|     1      | NodeMCU ESP8266 | 
-| 1 | Sensor de Luz (LDR) | 
-| 1 | Fonte de energia | 
-| x | Resistores | 
-| x | LEDs | 
-| x | Transistores |
-| 1 | Protoboard | 
-| x | Jumpers |
-
-
-## Descrição dos Componentes - 
-
-- **NodeMCU ESP8266**: Placa de desenvolvimento baseada no chip ESP8266, ideal para projetos de IoT devido ao seu WiFi embutido. 
-- **Sensor de Luz (LDR)**: Utilizado para detectar a luminosidade ambiente e acionar as luzes dos postes. 
-- **Fonte de energia**: Necessária para alimentar o NodeMCU e os outros componentes do circuito. 
-- **Resistores**: Utilizados para limitar a corrente em diversos pontos do circuito. 
-- **LEDs**: Utilizados como indicadores visuais no projeto. 
-- **Transistores**: Utilizados para amplificar ou comutar sinais eletrônicos. 
-- **Protoboard**: Placa de ensaio utilizada para montar circuitos eletrônicos sem a necessidade de solda. 
-
-
-
-- **Jumpers**: Fios utilizados para realizar as conexões no protoboard.
+| Quantidade | Componente         | Descrição                                    |
+|-------------|--------------------|----------------------------------------------|
+| 1           | **NodeMCU ESP8266** | Microcontrolador Wi-Fi para controle remoto  |
+| 1           | **Sensor LDR**      | Sensor de luz para detectar a luminosidade   |
+| 1           | **Fonte de Energia**| Fonte para alimentar o NodeMCU e outros componentes |
+| X           | **Resistores**      | Para controlar a corrente elétrica no circuito|
+| X           | **LEDs**            | Indicadores visuais de funcionamento        |
+| X           | **Transistores**    | Para amplificar sinais no circuito           |
+| 1           | **Protoboard**      | Placa de ensaio para montagem do circuito    |
+| X           | **Jumpers**         | Fios para conexões no protoboard             |
 
 
 ## 📁 Documentação das Interfaces e Protocolos
 
-- **Interface Web:** Interface para controle manual e monitoramento
-- **Protocolos de Comunicação:** 
-  - **TCP/IP:** Utilizado para conexão com a rede local e controle remoto
-  - **MQTT:** Utilizado para comunicação entre o NodeMCU e o servidor central
- 
-## 💡 Protocolo MQTT
+O protocolo MQTT é utilizado para a comunicação entre o NodeMCU e a plataforma de monitoramento. O NodeMCU publica o status das lâmpadas (acesas ou apagadas) em tópicos específicos no broker MQTT. A plataforma de monitoramento assina esses tópicos e recebe as atualizações em tempo real, permitindo o controle e a automação da iluminação pública. Para uma visualização mais clara, observe a imagem abaixo.
+
+![git](https://github.com/user-attachments/assets/de293ae1-0022-4b80-975a-39c907cad013)
+
+### 🌐 Interface Web
+Uma interface intuitiva que permite controle manual e monitoramento em tempo real da iluminação pública.
+
+### 📡 Protocolos de Comunicação
+- **TCP/IP:** Usado para comunicação local entre os dispositivos, permitindo a integração com a rede local e controle remoto.
+- **MQTT:** Protocolo de comunicação leve e eficiente utilizado para enviar e receber dados sobre o status das lâmpadas via broker centralizado. Permite o controle remoto das lâmpadas de maneira eficaz.
 
 
 ## 📌 Como Reproduzir 
 
-1. Clone este repositório com o seguinte comando:
+1. Clone este repositório:
 
     ```
    git clone https://github.com/seu-usuario/ProjetoNodeMCU.git
@@ -69,11 +59,7 @@ Este projeto utiliza os seguintes componentes:
 - Selecione a placa NodeMCU 1.0 (ESP-12E Module) em Ferramentas > Placa;
 - Clique em **carregar** para enviar o código para o NodeMCU.
 
-4. **Configuração do Broker MQTT:**
-  
-5. **Plataforma de Controle:**
-
-
-
+5. **Configuração do Broker MQTT:** 
+6. **Plataforma de Controle:** Acesse a interface de controle para monitorar em tempo real.
 
 
