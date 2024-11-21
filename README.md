@@ -5,6 +5,7 @@
   <br> </h1>
 Este projeto visa desenvolver um sistema simples de monitoramento de iluminação pública utilizando o microcontorlador NodeMCU e o protocolo MQTT. O sistema detecta o estado de postes de iluminação através de um sensor de luz LDR, que envia os dados para um microcontrolador. Com o uso de um protocolo MQTT, as informações sobre o status das lâmpadas são transmitidas para uma plataforma de monitoramento, que alerta em casos de falha ou uso indevido. 
 
+
 ## 🖱 Funcionalidades
 - Ligamento automático das luzes ao anoitecer e desligamento ao amanhecer.
 - Monitoramento em tempo real do status das luzes.
@@ -57,7 +58,22 @@ Este projeto utiliza os seguintes componentes:
 
 1. Clone este repositório com o seguinte comando:
 
-    `git clone https://github.com/seu-usuario/projeto.git` <br>
+    ```
+   git clone https://github.com/seu-usuario/ProjetoNodeMCU.git
+2. **Instale as dependências:** Bibliotecas do Arduino IDE: O projeto utiliza o NodeMCU ESP8266, então você precisará instalar as bibliotecas específicas para esse dispositivo no Arduino IDE. Após feito isso, vá em **Ferramentas > Placa > Gerenciador de Placas.** Busque por esp8266 e instale a última versão.
+3. **Acesse o código-fonte:** Dentro deste repositório, o código fonte está localizado na pasta `src`.
+4. **Código do NodeMCU:**
+- Abra o código no Arduino IDE;
+- Navegue até o arquivo `.ino` do projeto;
+- Conecte o NodeMCU ao seu computador via cabo USB;
+- Selecione a placa NodeMCU 1.0 (ESP-12E Module) em Ferramentas > Placa;
+- Clique em **carregar** para enviar o código para o NodeMCU.
 
-2. Continuar [...]
+4. **Configuração do Broker MQTT:**
+  
+5. **Plataforma de Controle:**
+
+
+
+
 
