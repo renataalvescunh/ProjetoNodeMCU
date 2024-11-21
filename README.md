@@ -3,14 +3,12 @@
   <br>
   ⚙💡 Sistema de Monitoramento de Iluminação Pública  
   <br> </h1>
-Este projeto propõe um sistema inteligente de monitoramento de iluminação pública utilizando o microcontrolador NodeMCU ESP8266 e o protocolo MQTT. O sistema realiza a detecção do status de lâmpadas em postes por meio de um sensor LDR, enviando as informações para uma plataforma de monitoramento em tempo real. 
+Este projeto propõe um sistema inteligente de monitoramento de iluminação pública utilizando o microcontrolador NodeMCU ESP8266 e o protocolo MQTT. O sistema realiza a detecção do status de luminosidade por meio de um sensor LDR, enviando as informações para uma plataforma de monitoramento em tempo real. 
 
 ## 🖱 Funcionalidades
 
-- **Ligamento automático das luzes:** As lâmpadas acendem automaticamente ao anoitecer, baseado na leitura do sensor LDR.
-- **Desligamento automático ao amanhecer:** As lâmpadas se apagam automaticamente quando a luminosidade do ambiente ultrapassa o limiar de luminosidade.
-- **Monitoramento em tempo real:** O status das lâmpadas é atualizado constantemente em uma plataforma de controle via protocolo MQTT.
-
+- **Funcionalidades:** bom...
+- 
 ## 🖥 Software desenvolvido 
 O código-fonte está disponível na pasta `src`. Consulte `docs.md` para documentação detalhada.
 
@@ -24,7 +22,6 @@ Este projeto utiliza os seguintes componentes:
 | 1           | **Sensor LDR**      | Sensor de luz para detectar a luminosidade   |
 | 1           | **Fonte de Energia**| Fonte para alimentar o NodeMCU e outros componentes |
 | X           | **Resistores**      | Para controlar a corrente elétrica no circuito|
-| X           | **LEDs**            | Indicadores visuais de funcionamento        |
 | X           | **Transistores**    | Para amplificar sinais no circuito           |
 | 1           | **Protoboard**      | Placa de ensaio para montagem do circuito    |
 | X           | **Jumpers**         | Fios para conexões no protoboard             |
@@ -32,7 +29,7 @@ Este projeto utiliza os seguintes componentes:
 
 ## 📁 Documentação das Interfaces e Protocolos
 
-O protocolo MQTT é utilizado para a comunicação entre o NodeMCU e a plataforma de monitoramento. O NodeMCU publica o status das lâmpadas (acesas ou apagadas) em tópicos específicos no broker MQTT. A plataforma de monitoramento assina esses tópicos e recebe as atualizações em tempo real, permitindo o controle e a automação da iluminação pública. Para uma visualização mais clara, observe a imagem abaixo.
+O protocolo MQTT é utilizado para a comunicação entre o NodeMCU e a plataforma de monitoramento. O NodeMCU publica o status do sensor de luz em tópicos específicos no broker MQTT. A plataforma de monitoramento assina esses tópicos e recebe as atualizações em tempo real, permitindo o controle e a automação da iluminação pública. Para uma visualização mais clara, observe a imagem abaixo.
 
 ![git](https://github.com/user-attachments/assets/de293ae1-0022-4b80-975a-39c907cad013)
 
