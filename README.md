@@ -5,14 +5,13 @@
   <br> </h1>
 Este projeto propõe um sistema inteligente de monitoramento de iluminação pública utilizando o microcontrolador NodeMCU ESP8266 e o protocolo MQTT. O sistema realiza a detecção do status de luminosidade por meio de um sensor LDR, enviando as informações para uma plataforma de monitoramento em tempo real. 
 
-## 🖱 Funcionalidades
+## 🖱 Funcionalidade
 
-- Verifica se a luz está acessa ou apagada;
-- 
-
+- Verifica e monitora o nível de iluminação no ambiente em tempo real.
+  
 
 ## 🖥 Software desenvolvido 
-O código-fonte está disponível na pasta `src`. Consulte `docs.md` para documentação detalhada.
+O código-fonte está disponível na pasta `src`. Consulte `README.md` para documentação detalhada.
 
 ## 🔌 Hardware Utilizado
 
@@ -31,8 +30,7 @@ Este projeto utiliza os seguintes componentes:
 
 ## 📁 Documentação das Interfaces e Protocolos
 
-O protocolo MQTT é utilizado para a comunicação entre o NodeMCU e a plataforma de monitoramento. O NodeMCU publica o status do sensor de luz em tópicos específicos no broker MQTT. A plataforma de monitoramento assina esses tópicos e recebe as atualizações em tempo real, permitindo o controle e a automação da iluminação pública. Para uma visualização mais clara, observe a imagem abaixo.
-
+O protocolo MQTT é utilizado para a comunicação entre o NodeMCU e a plataforma de monitoramento. O NodeMCU publica o status do sensor de luz em tópicos específicos no broker MQTT. A plataforma de monitoramento assina esses tópicos e recebe as atualizações em tempo real, permitindo o controle e a automação da iluminação pública. Para uma visualização mais clara, observe a imagem abaixo. 
 ![git](https://github.com/user-attachments/assets/de293ae1-0022-4b80-975a-39c907cad013)
 
 ### 🌐 Interface Web
