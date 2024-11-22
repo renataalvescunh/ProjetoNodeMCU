@@ -7,8 +7,10 @@ Este projeto propõe um sistema inteligente de monitoramento de iluminação pú
 
 ## 🖱 Funcionalidades
 
-- **Funcionalidades:** bom...
+- Verifica se a luz está acessa ou apagada;
 - 
+
+
 ## 🖥 Software desenvolvido 
 O código-fonte está disponível na pasta `src`. Consulte `docs.md` para documentação detalhada.
 
