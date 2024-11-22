@@ -11,7 +11,7 @@ O código desenvolvido no arquivo `monitoramento_iluminacao.ino` é responsável
 
 ## 🛠️ Como usar
 
-1. Abra o arquivo `monitoramento_iluminacao.ino` no **Arduino IDE**.
+1. Abra o arquivo `nome` no **Arduino IDE**.
 2. Conecte o **NodeMCU ESP8266** ao seu computador via USB.
 3. Selecione a placa **NodeMCU 1.0 (ESP-12E Module)** em **Ferramentas > Placa**.
 4. Selecione a porta correta em **Ferramentas > Porta**.
