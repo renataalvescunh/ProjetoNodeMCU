@@ -1,6 +1,6 @@
 # 🖥 Código-Fonte
 
-O código desenvolvido no arquivo `monitoramento_iluminacao.ino` é responsável por ler os valores do sensor de luminosidade (LDR) e, com base nessa leitura, controlar o estado das lâmpadas (ligar/desligar) via um microcontrolador NodeMCU ESP8266.
+O código desenvolvido no arquivo `ProjetoNodeMCU.ino` é responsável por ler os valores do sensor de luminosidade (LDR) e, com base nessa leitura, publicar esses dados via um microcontrolador NodeMCU ESP8266 utilizando o protocolo MQTT.
 
 ## ⚙️ Dependências
 
@@ -11,7 +11,7 @@ O código desenvolvido no arquivo `monitoramento_iluminacao.ino` é responsável
 
 ## 🛠️ Como usar
 
-1. Abra o arquivo `nome` no **Arduino IDE**.
+1. Abra o arquivo `ProjetoNodeMCU.ino` no **Arduino IDE**.
 2. Conecte o **NodeMCU ESP8266** ao seu computador via USB.
 3. Selecione a placa **NodeMCU 1.0 (ESP-12E Module)** em **Ferramentas > Placa**.
 4. Selecione a porta correta em **Ferramentas > Porta**.
@@ -19,7 +19,7 @@ O código desenvolvido no arquivo `monitoramento_iluminacao.ino` é responsável
 
 ## 🌐 Configuração do Broker MQTT
 
-Para que o sistema funcione, é necessário configurar um **Broker MQTT**. As informações sobre como configurar o broker podem ser encontradas no `README.md` principal do repositório .
+Para que o sistema funcione, é necessário configurar um **Broker MQTT**. As informações sobre como configurar o broker podem ser encontradas no `README.md` principal do repositório.
 
 ### ⚙️ Ajustes para Produção
 
