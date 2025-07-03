@@ -1,4 +1,4 @@
-<h1 align="center" id="project_name">
+<h1 align="center"
   <img src="https://github.com/user-attachments/assets/b2d46483-62ba-4f6b-a25e-000a550c525e" alt="Logo" width="204px">
   <br>
   ⚙💡 Sistema de Monitoramento de Iluminação Pública  
